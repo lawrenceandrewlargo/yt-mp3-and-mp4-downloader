@@ -177,8 +177,15 @@ module resets and UUID-isolated DBs; isolated native worker contexts hung here.
 No Turso/Vercel credentials or CLI configured. Provision/deploy privately and run
 all remote acceptance checks, including writes/reads/schema/import/optional
 Linux yt-dlp/EJS/timeouts. Do not claim deployment from a passing build.
-Git initialized but add/commit failed: .git is read-only under this task's permission
-profile. All source remains uncommitted; create logical commits when permitted.
+The implementation was published to `main` at
+https://github.com/lawrenceandrewlargo/yt-mp3-and-mp4-downloader using the connected
+GitHub app on 2026-10-04. Implementation commit:
+`3925ed6ade83e413ebcec3b7f37cde98cd8eab40`; a following documentation commit records
+publication. Local Git add/commit is still blocked because .git is read-only under
+this task's permission profile, so this local checkout's metadata remains unborn
+and has no configured remote. Terminal GitHub access is also network-blocked.
+Use a fresh clone or synchronize this checkout from the remote once normal Git
+permissions/network access are available. Verify remote HEAD before continuing.
 At handoff, a direct production preview was left running on 127.0.0.1:3000 and
 the browser workbench left open. No download worker was left running. Verify
 current process/port state before launching a second server; this note can drift.

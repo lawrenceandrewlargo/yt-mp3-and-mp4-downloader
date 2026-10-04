@@ -52,7 +52,7 @@ below. A mocked extractor or passing build is not proof of a live download.
 | FFmpeg | 14 generated two-second fixtures; ffprobe verified audio streams, requested MP3 bitrates, 720p MP4 merge, 1080p MKV remux, 720p WebM/Opus, and MP3/M4A/FLAC cover/title metadata. Fixture files removed. |
 | Worker | Real SQL polling and missing-tool failure handling; queued cancellation tested with the running worker. Active-process cancellation and concurrency under actual downloading are not proven here. |
 | Dependencies | Installed from existing official npm tarball cache because network installation was blocked. Full fresh network npm install/ci was not performed. |
-| Git | Repository initialized. Add/commit failed because .git is read-only in the permission profile; source is uncommitted. No secrets/downloads/databases/cache files are intended for version control. |
+| Git | Repository published to `main` through the connected GitHub app in a follow-up on 2026-10-04. Implementation commit: `3925ed6ade83e413ebcec3b7f37cde98cd8eab40`. Local add/commit remains blocked by read-only .git; terminal network access is blocked. Local metadata remains unborn; use a fresh clone or synchronize when permissions/network allow. Secrets/downloads/databases/cache files were excluded. |
 
 ## Required live-media matrix
 
