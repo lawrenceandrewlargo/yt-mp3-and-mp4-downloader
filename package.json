@@ -1,0 +1,49 @@
+{
+  "name": "media-research-downloader",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": "24.x" },
+  "scripts": {
+    "dev": "tsx scripts/app.ts dev",
+    "build": "next build --webpack",
+    "start": "tsx scripts/app.ts start",
+    "worker": "tsx scripts/worker.ts",
+    "test:smoke": "tsx scripts/smoke.ts",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --configLoader native",
+    "test:integration": "tsx scripts/integration.ts",
+    "test:youtube": "tsx scripts/youtube-integration.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "tsx scripts/migrate.ts",
+    "db:studio": "drizzle-kit studio",
+    "db:backup": "tsx scripts/backup.ts",
+    "db:export": "tsx scripts/export.ts",
+    "db:import": "tsx scripts/import.ts",
+    "diagnostics": "tsx scripts/diagnostics.ts",
+    "cloud:prepare": "tsx scripts/prepare-cloud.ts"
+  },
+  "dependencies": {
+    "@libsql/client": "0.18.0",
+    "drizzle-orm": "0.45.2",
+    "next": "16.3.8",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "zod": "^4.0.0",
+    "dotenv": "^17.0.0",
+    "lucide-react": "1.49.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.9.3",
+    "drizzle-kit": "0.31.11",
+    "tsx": "^4.0.0",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "16.3.8",
+    "vitest": "4.1.11",
+    "@playwright/test": "^1.58.0"
+  }
+}
